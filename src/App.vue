@@ -101,12 +101,6 @@ const getTable = async()=>{
   state.showNumRange = false,//是否显示数字范围
   state.isInit = true;//是否是整数
   table = await bitable.base.getActiveTable();
-  // const selection = await bitable.base.getSelection();
-  // console.log("当前表格激活信息",selection)
-  // const view = await table.getViewById(selection.viewId);
-  // console.log("当前视图信息",view)
-  // const fieldList = await table.getFieldList();
-  // console.log("fieldList",fieldList)
   // 初始化字段列表
   getFieldList()
 }
